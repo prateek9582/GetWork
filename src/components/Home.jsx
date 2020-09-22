@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import Companies from './Companies';
 // import Offered from './Offered';
+import Demo from './Calender'
 import Dell from './dell.jpg';
 import Sales from './mcd.png';
 class Home extends Component {
@@ -152,7 +153,7 @@ class Home extends Component {
 
                     <div className="back">
                         <div className="calender">
-                        Calender
+                                <Demo></Demo>
                         </div>
                         <div className="stud-placed">
                                 <h3>Students<br></br>Placed</h3>
