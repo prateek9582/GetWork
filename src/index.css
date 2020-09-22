@@ -6,8 +6,297 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+*{
+  overflow: hidden;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.app{
+  display: flex;
+}
+.menu-list{
+  display: inline;
+  background-color: lightgray;
+  width:15%;
+  height: 100vh;
+  border-style: solid;
+
+}
+.comapany{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+.logo{
+  height : 5rem;
+  width: 5rem;
+}
+.group{
+  list-style-type: none;
+}
+.item{
+  margin-bottom: 1rem;
+}.box{
+  margin-top: 1rem;
+  height: 3rem;
+  width: 3rem;
+  background-color: aqua;
+}
+.last{
+  margin-top: 10rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-bottom: 12rem;
+  border-style: inherit;
+}
+.home-full{
+  border: 1px solid grey;
+}
+.bar{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid;
+  width: 124rem;
+}
+.icon{
+  display: flex;
+    justify-content: space-evenly;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+}
+.overall{
+  display: flex;
+  margin-left: 1rem;
+}
+.mark{
+  margin-top: 1rem;
+  display: flex;
+  width: 90rem;
+  margin-right: 1rem;
+}
+.university{
+  margin-right: 14rem;
+  
+}
+.mark1{
+  margin-top: 1rem;
+  margin-left: 2rem;
+  display: flex;
+  border: 1px solid;
+  width: 28rem;
+}
+.fas.fa-clipboard-list.icon{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.generate{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.grid{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-left: 1rem;
+  display: inline-block;
+}
+.front{
+  position: relative;
+  padding-top: 1rem;
+  display: flex;
+  width: 100%;
+
+}
+.invite{
+  width: 17%;
+    height: 35vh;
+    margin-right: 1rem;
+    border: 1px solid gray;
+}
+.new-jobs{
+  margin-right: 2rem;
+  height: 35vh;
+  width: 28%;
+  border: 1px solid gray;
+}
+.ctc{
+  height: 35vh;
+    width: 50%;
+    border: 1px solid gray;
+}
+.center{
+  position: relative;
+  padding-top: 1rem;
+  display: flex;
+  width: 100%
+}
+.registered{
+  margin-right: 2rem;
+    height: 10vh;
+    width: 31rem;
+    border: 1px solid gray;
+    display: flex;
+    text-align: center;
+}
+.student{
+  margin-left:2rem;
+  display:inline-grid;
+}
+.fas.fa-graduation-cap.graduate{
+  margin-left:1rem;
+  margin-top: 3rem;
+  margin-right: 2rem;
+  background-color: lightblue;
+  height: 2rem;
+}
+.visited{
+  margin-right: 2rem;
+    height: 10vh;
+    width: 24rem;
+    border: 1px solid gray;
+    display: flex;
+    text-align: center;
+}
+.fas.fa-users.visit{
+  margin-left:1rem;
+  margin-top: 3rem;
+  margin-right: 2rem;
+  background-color: lightblue;
+  height: 2rem;
+}
+.circles{
+  height: 15vh;
+    width: 50%;
+    border: 1px solid gray;
+    display: flex;
+}
+.para-circle{
+  margin-left: 1rem;
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+.back{
+  padding-top: 1rem;
+  display: flex;
+  width: 100%;
+}
+.calender{
+  margin-right: 2rem;
+    position: relative;
+    height: 30vh;
+    width: 57rem;
+    border: 1px solid gray;
+}
+.stud-placed{
+  margin-right: 2rem;
+    height: 30vh;
+    width: 22rem;
+    border: 1px solid gray;
+}
+.notifications{
+  margin-right: 2rem;
+    height: 30vh;
+    width: 38rem;
+    border: 1px solid gray;
+}.invitation{
+  display: flex;
+  font-size: 1.25rem;
+}.invite-logo{
+  border-radius: 50%;
+  width: 7rem;
+}
+.dell{
+  margin-top: 1rem;
+}
+.all{
+  margin-left: 1rem;
+}
+.heading{
+  margin-left: 1rem;
+}
+.sales-logo{
+  border-radius: 50%;
+  width: 5rem;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;}
+.sales-span{
+  display: inline-grid;
+    margin-left: 2rem;
+}
+.salesall{
+  text-align: end;
+}
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+    margin: 10px auto;
+    /* max-width: 80%; */
+    max-height: 250px;
+    width: 6rem;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+
+.circular-chart.green .circle {
+  stroke: #4CC790;
+}
+
+.circular-chart.purple .circle {
+  stroke: purple;
+}
+.circular-chart.yellow .circle {
+  stroke: yellow;
+}
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+ .components{
+  display: flex;
+  /* margin-left: 2rem; */
+}
+.circle-component{
+  text-align: center;
+    width: 8rem;
+    /* margin-left: 1rem; */
+    margin-left: 6rem;
+}
+.flex-wrapper{
+  width:20rem
+} 
