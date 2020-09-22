@@ -8,6 +8,7 @@ class Home extends Component {
     render() { 
         let dell = ["Dell Incorporation","Dell Incorporation","Dell Incorporation","Dell Incorporation"];
         let sales = ["Sales Manager","Sales Manager","Sales Manager"];
+        let noti = ["Company A invited you for placements","Company A invited you for placements","Company A invited you for placements","Company A invited you for placements","Company A invited you for placements","Company A invited you for placements"];
         return (
             <React.Fragment>
                 <div className="home-full">
@@ -154,10 +155,37 @@ class Home extends Component {
                         Calender
                         </div>
                         <div className="stud-placed">
-                        Students Placed
+                                <h3>Students<br></br>Placed</h3>
+                                <span>In past 30 days<br></br></span>
+                                <span><b>450/500</b></span>
+                                <div className="circle-component">
+                                <div className="flex-wrapper">
+                                <div className="single-chart">
+                                    <svg viewBox="0 0 36 36" className="circular-chart green">
+                                    <path className="circle-bg"
+                                        d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                                    />
+                                    <path className="circle"
+                                        stroke-dasharray="80, 100"
+                                        d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                                    />
+                                    <text x="18" y="20.35" className="percentage">80%</text>
+                                    </svg>
+                                </div>
+                                </div>
+                            </div>
                         </div>
                         <div className="notifications">
-                                <div><b>Recent notifications</b></div>
+                                <h3>Recent notifications</h3>
+                                {noti.map((notice) =>{
+                                    return <div>-{notice}</div>
+                                })}
+                                <div className="salesall"><b>View all notifications -></b></div>
+
                         </div>
                     </div>
 

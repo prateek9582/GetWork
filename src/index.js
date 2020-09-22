@@ -10,7 +10,7 @@ import Home from './components/Home';
 
 class Menu extends Component {
   state = { 
-    List:["Home","Create Job","Invite Companies","Jobs","Open Jobs","Closed Jobs","Applicant status","Notices","Inbox","Outbox","Connections","Companies","Students","Reports"]
+    List:["Create Job","Invite Companies","Jobs","Open Jobs","Closed Jobs","Applicant status","Notices","Inbox","Outbox","Connections","Companies","Students","Reports"]
    }
   render() { 
       return ( 
@@ -28,6 +28,7 @@ function MenuList(props){
     <div className="box"></div>
     </div>
     <ul className ="group">
+      <li className="item"><b>Home</b></li>
       {
         list.map((name) => {
           return (<li className="item" onClick="">{name}</li>)
